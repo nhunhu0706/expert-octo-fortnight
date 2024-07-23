@@ -8,9 +8,9 @@ import streamlit as st
 st.title('Sales Prediction')
 col1, col2 = st.columns(2)
 with col1:
-    x1 = st.number_input('TV')
+    x1 = st.number_input('TV',0)
 with col2:
-    x2 = st.number_input('Radio')
+    x2 = st.number_input('Radio',0)
 button = st.button('Predict', use_container_width=True)
 if button:
     if x2 == 0 or x1 == 0:
